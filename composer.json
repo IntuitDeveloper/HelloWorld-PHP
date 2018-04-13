@@ -1,0 +1,12 @@
+{
+  "name": "intuit-demos-webhooks",
+  "description": "A sample NodeJs application to demonstrate Webhooks and capture the notifications into a (csv) format file. This demo includes OAuth2.0",
+  "type": "library",
+  "keywords": ["api", "http", "rest", "quickbooks", "smallbusiness"],
+  "homepage": "http://developer.intuit.com",
+  "require": {
+    "quickbooks/v3-php-sdk": ">=4.0.1"
+  },
+  "author": "anil_kumar",
+  "license": "MIT"
+}
