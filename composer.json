@@ -1,6 +1,6 @@
 {
   "name": "intuit-demos-webhooks",
-  "description": "A sample NodeJs application to demonstrate Webhooks and capture the notifications into a (csv) format file. This demo includes OAuth2.0",
+  "description": "A sample PHP Hello Application to demonstrate OAuth2.0",
   "type": "library",
   "keywords": ["api", "http", "rest", "quickbooks", "smallbusiness"],
   "homepage": "http://developer.intuit.com",
