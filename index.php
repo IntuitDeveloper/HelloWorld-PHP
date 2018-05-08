@@ -73,7 +73,7 @@ if (isset($_SESSION['sessionAccessToken'])) {
 
                         if (win.document.URL.indexOf("code") != -1) {
                             window.clearInterval(pollOAuth);
-                            // win.close();
+                            win.close();
                             location.reload();
                         }
                     } catch (e) {
