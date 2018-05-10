@@ -39,10 +39,6 @@ You must have an Intuit Developer account and have created an app. To know more 
 
 ## Configuration
 
-Copy the contents from `config-sample.json` to `config.json`:
-```bash
-$ cp config-sample.php config.php
-```
 Edit the `config.php` file to add your:  
 
 * **clientId:** You can find your `clientId` from the `Keys` tab under your `App` listed on the developer portal
