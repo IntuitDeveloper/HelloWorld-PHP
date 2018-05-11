@@ -102,7 +102,7 @@ if (isset($_SESSION['sessionAccessToken'])) {
                     type: "POST",
                     url: "refreshToken.php",
                 }).done(function( msg ) {
-                
+
                 });
             }
         }
@@ -126,19 +126,22 @@ if (isset($_SESSION['sessionAccessToken'])) {
 
     <div class="well text-center">
 
-        <h1>Intuit OAuth2.0 & OpenID Connect Demo in PHP</h1>
+        <h1>QuickBooks HelloWorld sample application</h1>
+        <h2>Demonstrate Connect to QuickBooks flow and API request</h2>
 
         <br>
 
     </div>
 
-    <h2>OAuth2.0</h2><h4>( Please refer to the <a target="_balnk" href="https://developer.intuit.com/docs/00_quickbooks_online/2_build/10_authentication_and_authorization/10_oauth_2.0">OAuth2.0 Documentation</a> )</h4>
+
     <p>If there is no access token or the access token is invalid, click the <b>Connect to QuickBooks</b> button below.</p>
     <pre id="accessToken">
-        <style="background-color:#efefef;overflow-x:scroll"><?php echo json_encode($accessTokenJson, JSON_PRETTY_PRINT); ?>
+        <style="background-color:#efefef;overflow-x:scroll">
+        <?php
+    $displayString = isset($accessTokenJson) ? $accessTokenJson : "No Access Token Generated Yet";
+    echo json_encode($displayString, JSON_PRETTY_PRINT); ?>
     </pre>
     <a class="imgLink" href="#" onclick="oauth.loginPopup()"><img src="views/C2QB_green_btn_lg_default.png" width="178" /></a>
-    <button  type="button" class="btn btn-success" onclick="apiCall.refreshToken()">Refresh Token</button>
     <hr />
 
 
