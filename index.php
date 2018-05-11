@@ -127,17 +127,15 @@ if (isset($_SESSION['sessionAccessToken'])) {
     <div class="well text-center">
 
         <h1>QuickBooks HelloWorld sample application</h1>
-        <h2>Demonstrate Connect to QuickBooks flow and API request</h2>
+        <h2>Demonstrate Connect to QuickBooks flow and API Request</h2>
 
         <br>
 
     </div>
 
-
     <p>If there is no access token or the access token is invalid, click the <b>Connect to QuickBooks</b> button below.</p>
     <pre id="accessToken">
-        <style="background-color:#efefef;overflow-x:scroll">
-        <?php
+        <style="background-color:#efefef;overflow-x:scroll"><?php
     $displayString = isset($accessTokenJson) ? $accessTokenJson : "No Access Token Generated Yet";
     echo json_encode($displayString, JSON_PRETTY_PRINT); ?>
     </pre>
@@ -145,25 +143,12 @@ if (isset($_SESSION['sessionAccessToken'])) {
     <hr />
 
 
-    <h2>Make an API call</h2><h4>( Please refer to our <a target="_balnk" href="https://developer.intuit.com/v2/apiexplorer?apiname=V3QBO#?id=Account">API Explorer</a> )</h4>
-    <p>If there is no access token or the access token is invalid, click either the <b>Connect to QucikBooks</b> or <b>Sign with Intuit</b> button above.</p>
+    <h2>Make an API call</h2>
+    <p>If there is no access token or the access token is invalid, click either the <b>Connect to QucikBooks</b> button above.</p>
     <pre id="apiCall"></pre>
     <button  type="button" class="btn btn-success" onclick="apiCall.getCompanyInfo()">Get Company Info</button>
 
     <hr />
-
-    <p>More info:</p>
-    <ul>
-        <li><a href="https://developer.intuit.com/docs">Intuit API Developer Guide</a></li>
-        <li><a href="https://developer.intuit.com/docs/00_quickbooks_online/2_build/50_sample_apps_and_code">Intuit Sample Apps and Code</a></li>
-        <li><a href="https://developer.intuit.com/docs/00_quickbooks_online/2_build/40_sdks">Intuit Official SDK's</a></li>
-        <li><a href="https://github.com/anilkumarbp/intuit-demos-webhooks">Github Repo</a></li>
-        <li><a href="https://github.com/anilkumarbp/intuit-demos-webhooks/issues">Report Issues</a></li>
-    </ul>
-    <hr>
-    <p class="text-center text-muted">
-        &copy; 2018 Intuit&trade;, Inc. All rights reserved. Intuit and QuickBooks are registered trademarks of Intuit Inc.
-    </p>
 
 </div>
 </body>
