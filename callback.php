@@ -22,6 +22,11 @@ function processCode()
     $OAuth2LoginHelper = $dataService->getOAuth2LoginHelper();
     $parseUrl = parseAuthRedirectUrl($_SERVER['QUERY_STRING']);
 
+    if(isset($parseUrl['error'])) {
+        echo 'Error: ' . $parseUrl['error'];
+        return;
+    }
+
     /*
      * Update the OAuth2Token
      */
@@ -38,6 +43,7 @@ function parseAuthRedirectUrl($url)
 {
     parse_str($url,$qsArray);
     return array(
+        'error' => $qsArray['error'],
         'code' => $qsArray['code'],
         'realmId' => $qsArray['realmId']
     );
