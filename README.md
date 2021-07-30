@@ -1,4 +1,4 @@
-[![Sample Banner](views/Sample.png)][ss1]
+[![Rate your Sample](views/Ratesample.png)][ss1][![Yes](views/Thumbup.png)][ss2][![No](views/Thumbdown.png)][ss3]
 
 Intuit OAuth2.0 and OpenID Connect Demo in PHP
 ==========================================================
@@ -136,4 +136,6 @@ Events are logged to the Node.js console.
 
 ![APP screenshots](views/app.png)
 
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=HelloWorld-PHP
+[ss1]: #
+[ss2]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=Yes&checkpoint=HelloWorld-PHP&pageUrl=github
+[ss3]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=No&checkpoint=HelloWorld-PHP&pageUrl=github
