@@ -20,7 +20,7 @@ function processCode()
     ));
 
     $OAuth2LoginHelper = $dataService->getOAuth2LoginHelper();
-    $parseUrl = parseAuthRedirectUrl($_SERVER['QUERY_STRING']);
+    $parseUrl = parseAuthRedirectUrl(htmlspecialchars_decode($_SERVER['QUERY_STRING']));
 
     /*
      * Update the OAuth2Token
