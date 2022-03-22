@@ -1,5 +1,5 @@
 {
-  "name": "intuit-demos-webhooks",
+  "name": "intuitdeveloper/helloworld-php",
   "description": "A sample PHP Hello Application to demonstrate OAuth2.0",
   "type": "library",
   "keywords": ["api", "http", "rest", "quickbooks", "smallbusiness"],
